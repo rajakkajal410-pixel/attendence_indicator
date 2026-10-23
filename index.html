@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Attendance & Engagement Agent</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b12;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111827;
+            padding: 22px 8%;
+            border-bottom: 1px solid #293548;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #8b9cff;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: #d1d5db;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #8b9cff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 75px 8% 60px;
+            background: linear-gradient(135deg, #151c35, #080b12);
+        }
+
+        .tag {
+            display: inline-block;
+            color: #a5b4fc;
+            border: 1px solid #6366f1;
+            padding: 6px 15px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5vw, 48px);
+            line-height: 1.25;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .hero h1 span {
+            color: #818cf8;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #b8c0d4;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 12px 25px;
+            border-radius: 8px;
+            background: #6366f1;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #818cf8;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .section-title {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .overview {
+            color: #b8c0d4;
+            font-size: 16px;
+            max-width: 1100px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+            margin-top: 28px;
+        }
+
+        .card {
+            background: #131a27;
+            border: 1px solid #283449;
+            padding: 25px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #818cf8;
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #a5b4fc;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #b8c0d4;
+            font-size: 15px;
+        }
+
+        .skills {
+            background: #0d121d;
+        }
+
+        .skill {
+            background: #161e2c;
+            border: 1px solid #2a364b;
+            padding: 20px;
+            border-radius: 12px;
+            color: #e5e7eb;
+            font-weight: bold;
+        }
+
+        .skill span {
+            display: block;
+            font-size: 13px;
+            font-weight: normal;
+            color: #9ca3af;
+            margin-top: 5px;
+        }
+
+        .privacy {
+            background: linear-gradient(135deg, #20264b, #121a2c);
+            border: 1px solid #3b4674;
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #080b12;
+            border-top: 1px solid #283449;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+
+            nav a {
+                margin: 0 12px 0 0;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            .hero {
+                padding: 55px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>✦ ClassMind AI</h2>
+
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#scenarios">Scenarios</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="tag">ARTIFICIAL INTELLIGENCE PROJECT</div>
+
+        <h1>Multimodal Attendance<br>
+        & <span>Engagement Agent</span></h1>
+
+        <p>
+            An intelligent classroom solution that combines AI,
+            computer vision and audio analysis to track attendance,
+            understand engagement patterns and support better teaching.
+        </p>
+
+        <a href="#overview" class="button">Explore Project ↗</a>
+    </div>
+
+    <section id="overview">
+        <h2 class="section-title">Overview</h2>
+
+        <p class="overview">
+            Traditional attendance systems are often manual, time-consuming
+            and limited to recording student presence. They provide little
+            information about classroom interaction or session effectiveness.
+
+            The Multimodal Attendance & Engagement Agent addresses these
+            challenges through an AI-powered classroom intelligence system.
+            It uses computer vision, audio signal processing and agent-based
+            reasoning to generate attendance records, analyze engagement
+            trends and provide useful teaching suggestions.
+
+            Designed for offline operation and privacy-conscious deployment,
+            the system helps educators understand classroom dynamics and
+            make informed decisions that support a more effective learning
+            experience.
+        </p>
+
+        <div class="privacy">
+            <h3>🔒 Privacy-Conscious AI</h3>
+            <p>
+                Designed to operate offline, with responsible handling of
+                classroom data and human oversight of teaching decisions.
+            </p>
+        </div>
+    </section>
+
+    <section id="scenarios">
+        <h2 class="section-title">Project Scenarios</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="icon">📋</div>
+                <h3>01. Automated Attendance</h3>
+                <p>
+                    Processes live or recorded classroom video to identify
+                    participants and track sustained presence. It generates
+                    timestamped attendance logs and reduces the need for
+                    manual roll calls.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>02. Engagement Analysis</h3>
+                <p>
+                    Analyzes permitted behavioral indicators, movement
+                    patterns and audio activity to identify engagement
+                    trends, participation peaks and possible attention
+                    drops during a session.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🤖</div>
+                <h3>03. AI Teaching Suggestions</h3>
+                <p>
+                    Provides context-aware suggestions to help instructors
+                    adjust lesson pacing, introduce interactive activities
+                    and improve classroom management.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills Required</h2>
+        <p class="overview">
+            Technologies and concepts that can help build this project.
+        </p>
+
+        <div class="grid">
+
+            <div class="skill">
+                🧠 Artificial Intelligence
+                <span>Intelligent analysis and recommendations</span>
+            </div>
+
+            <div class="skill">
+                👁️ Computer Vision
+                <span>Visual processing and participant tracking</span>
+            </div>
+
+            <div class="skill">
+                🎙️ Audio Processing
+                <span>Analyzing audio signals and activity</span>
+            </div>
+
+            <div class="skill">
+                📈 Data Analytics
+                <span>Attendance reports and engagement trends</span>
+            </div>
+
+            <div class="skill">
+                🔐 Data Privacy
+                <span>Responsible data handling and offline operation</span>
+            </div>
+
+            <div class="skill">
+                💻 Web Development
+                <span>HTML, CSS and JavaScript interface design</span>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Multimodal Attendance & Engagement Agent</p>
+        <p>AI for Smarter and More Effective Learning</p>
+    </footer>
+
+</body>
+</html>
